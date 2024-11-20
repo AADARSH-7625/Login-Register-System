@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id="message"></div>
+    <nav>
+        <img src="./img/istockphoto-953520974-612x612-removebg-preview.png" alt="">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Service</li>
+        </ul>
+    </nav>
+    <section class="Form-Container">
+        <div class="container">
+            <div class="left-side">
+                <img src="./img/6333187-removebg-preview.png" alt="Welcome Image">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login/register with your personal info.</p>
+                <p>"Your journey to the best experiences starts here."</p>
+            </div>
+            <div class="right-side">
+                <div class="quit-btn"><i class="fa-solid fa-xmark" style="color: #000000;"></i></div>
+                
+                <div class="toggle-buttons">
+                    <div class="filter-btn" id="filter-btn"></div>
+                    <button id="loginBtn" class="active">Login</button>
+                    <button class="register-btn" id="registerBtn">Register</button>
+                </div>
+                <form id="loginForm" class="form" style="display: block;">
+                    <!-- <h2>Login</h2> -->
+                    <input type="text" placeholder="Username" name="lusername" id="loginUsername" required>
+                    <input type="password" placeholder="Password" name="lpassword" id="loginPassword" current-password required>
+                    <span style="font-size: 13px; float: right; margin-right: 30px; margin-bottom: 25px;"><a href="#">Forget password?</a></span>
+                    <label>
+                        <span id="terms"><input type="checkbox" id="loginTerms"><span> I agree to the </span><a href="#">Terms and Conditions</a></span>
+                    </label>
+                    <button type="submit" id="loginSubmit" >Login</button>
+                </form>
+                <form id="registerForm" class="form" style="display: none;">
+                    <!-- <h2>Register</h2> -->
+                    <input type="text" placeholder="Username" name="username" id="registerUsername" required>
+                    <input type="email" placeholder="Email" name="email" id="registerEmail" required>
+                    <input type="password" placeholder="Password" name="password" id="registerPassword" required>
+                    <label>
+                        <input type="checkbox" id="registerTerms"> I agree to the <a href="#">Terms and Conditions</a>
+                    </label>
+                    <button type="submit" id="registerSubmit" >Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
